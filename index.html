@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive comments section</title>
+  <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+
+  <!-- Pull dynamic content from the data.json file -->
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <main>
+    <div class="comments-container">
+      <div class="comment" id="1">
+        <div class="comment-container">
+          <div class="comment-score-box">
+            <button><img src="./images/icon-plus.svg" alt="score-increase"></button>
+            <h4 class="comment-score">12</h4>
+            <button><img src="./images/icon-minus.svg" alt="score-decrease"></button>
+          </div>
+          <div class="comment-info-box">
+            <div class="comment-header">
+              <img src="./images/avatars/image-amyrobson.png" alt="" class="comment-user-avatar">
+              <h4 class="comment-username">amyrobson</h4>
+              <p class="comment-timeline">1 month ago</p>
+            </div>
+            <div class="comment-text">Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well.</div>
+          </div>
+          <div class="comment-actions">
+            <button class="reply-comment">
+              <img src="./images/icon-reply.svg" alt="" />
+              Reply
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="comment" id="2">
+        <div class="comment-container">
+          <div class="comment-score-box">
+            <button><img src="./images/icon-plus.svg" alt="score-increase"></button>
+            <h4 class="comment-score">5</h4>
+            <button><img src="./images/icon-minus.svg" alt="score-decrease"></button>
+          </div>
+          <div class="comment-info-box">
+            <div class="comment-header">
+              <img src="./images/avatars/image-maxblagun.png" alt="" class="comment-user-avatar">
+              <h4 class="comment-username">maxblagun</h4>
+              <p class="comment-timeline">2 weeks ago</p>
+            </div>
+            <div class="comment-text">Woah, your project looks awesome! How long have you been coding for? I'm still new, but think I want to dive into React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!</div>
+          </div>
+          <div class="comment-actions">
+            <button class="reply-comment">
+              <img src="./images/icon-reply.svg" alt="" />
+              Reply
+            </button>
+          </div>
+        </div>
+        <div class="reply-container">
+          <div class="reply">
+            <div class="comment-score-box">
+              <button><img src="./images/icon-plus.svg" alt="score-increase"></button>
+              <h4 class="comment-score">4</h4>
+              <button><img src="./images/icon-minus.svg" alt="score-decrease"></button>
+            </div>
+            <div class="comment-info-box">
+              <div class="comment-header">
+                <img src="./images/avatars/image-ramsesmiron.png" alt="" class="comment-user-avatar">
+                <h4 class="comment-username">ramsesmiron</h4>
+                <p class="comment-timeline">1 week ago</p>
+              </div>
+              <div class="comment-text">If you're still new, I'd recommend focusing on the fundamentals of HTML, CSS, and JS before considering React. It's very tempting to jump ahead but lay a solid foundation first.</div>
+            </div>
+            <div class="comment-actions">
+              <button class="reply-comment">
+                <img src="./images/icon-reply.svg" alt="" />
+                Reply
+              </button>
+            </div>
+          </div>
+          <div class="reply">
+            <div class="comment-score-box">
+              <button><img src="./images/icon-plus.svg" alt="score-increase"></button>
+              <h4 class="comment-score">2</h4>
+              <button><img src="./images/icon-minus.svg" alt="score-decrease"></button>
+            </div>
+            <div class="comment-info-box">
+              <div class="comment-header">
+                <img src="./images/avatars/image-juliusomo.png" alt="" class="comment-user-avatar">
+                <h4 class="comment-username">juliusomo</h4>
+                <span class="comment-you-mark">you</span>
+                <p class="comment-timeline">2 days ago</p>
+              </div>
+              <div class="comment-text">I couldn't agree more with this. Everything moves so fast and it always seems like everyone knows the newest library/framework. But the fundamentals are what stay constant.</div>
+            </div>
+            <div class="comment-actions">
+              <button class="delete-comment">
+                <img src="./images/icon-delete.svg" alt="" />
+                Delete
+              </button>
+              <button class="edit-comment">
+                <img src="./images/icon-edit.svg" alt="" />
+                Edit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="add-comment-container">
+      <img class="author-img" src="./images/avatars/image-juliusomo.png" alt="">
+      <textarea class="comment-box" name="" id="" cols="20" rows="4" placeholder="Add a comment..."></textarea>
+      <button class="send-button">Send</button>
+    </div>
+  </main>
+</body>
+</html>
